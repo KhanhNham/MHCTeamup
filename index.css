@@ -1,141 +1,96 @@
-body {
-	font-family: "GillSans" ! important;
-	font-style: normal ! important;
-  font-variant: normal ! important;
-  font-weight: 300;
-  color: #1a1a1a ! important;
-  background-color: whitesmoke;
-}
-/*
-
-CSS NAV BAR
-
-*/
-
-.nav-bar {
-    background-color: #004aad;
-    overflow: hidden;
-  }
-
-  .nav-bar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 200;
-    width: 22.68%;
-  }
-  .nav-bar a:hover {
-    background-color:#307ddc;
-    color: rgb(235, 236, 238);
-  }
-  .nav-bar a.active {
-    background-color:  #307ddc;
-    color: white;
-  }
-/*
-
-CSS PROJECTS FORM PAGE
-
-*/
-  
-div.container {
-	border:2px solid #ccc;
-    height: 35em;
-    align-content: center;
-    overflow-y: scroll;
-    }
-table#tbl-register {
-    width: 100%;
-    margin: 0px auto;
-}
-
-table#tbl-register, th, td {
-    padding: 5px;
-}
-
-table#tbl-register td:nth-child(odd) {
-    text-align: left;
-    width:35%; 
-}
- textarea {
-    width: 60%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 35px;
-    background-color: #307ddc;
-    resize: vertical;
-    text-align: left;
-    color: white;
-    font-size: medium;
-
-    }
-  input[type=text] {
-    text-align: center;
-    width: 5%;
-    float: right;
-    padding: 12px;
-    border: 5px solid #307ddc ;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    resize: vertical;
-    color: #307ddc;
-    font-size: large;
-    font-weight: 600;
-    
-  }
-
-  span{
-    float: right;
-  }
-
-::placeholder {
-  color: rgb(199, 199, 199);
-  font-weight: 300;
-}
-
-.button {
-  background-color:  #004aad;
-  border-radius: 12px;
+h1 {
   color: white;
-  padding: 15px 30px;
+  font-family: "League Spartan";
+  background-color: #004aad;
+  font-size: 100px;
   text-align: center;
+  margin: 0;
+  width: 100%;
+  height:120px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  /* position:fixed; */
+}
+
+nav {
+  width:100%;
+  height:50px;
+  background-color: #004aad;
+  /* background-size: 100% 20%; */
+  font-size: 0;
+  font-family: "Aileron Light";
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  margin:0;
+  /* position:fixed; */
+}
+
+nav a {
   text-decoration: none;
+  color: white;
   display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  margin-left: 23%;
+  text-align: center;
+  flex: 1;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin:0;
 }
-button:hover{
-  background-color: #307ddc;
-  color: rgb(235, 236, 238);
-  
+
+h2, p {
+  margin: 10px;
+  text-align: center;
+  color: #003366;
+  font-family:"Aileron Light";
 }
-/*
 
-CSS PROJECTS PAGE
+h2 {
+  font-size: 50px;
+}
 
-*/
-/* Create two equal columns that floats next to each other */
-.column {
-  border-radius: 5%;
-  padding: 70px;
-  background-color:#307ddc;
-  text-align: justify;
+p {
+  padding: 0 3%;
+  font-size: 20px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.grid-container {
+  display:grid;
+  grid-template-columns: 50% 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
+  grid-gap: 30px;
+  /* grid-auto-rows: 100px; */
+}
+
+.item-1 {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+}
+
+img, h3 {
   display: inline-block;
+  padding: 0 10px;
 }
 
-/* Clear floats after the columns */
-.row {
-  content: "";
-  display: table;
-  text-align: justify;
-  
-}
-* {
-  box-sizing: border-box;
+.item-2 {
+  grid-column: 2;
+  grid-row:1;
 }
 
-      
+.item-3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item-4 {
+  grid-column: 2;
+  grid-row: 2;
+}
